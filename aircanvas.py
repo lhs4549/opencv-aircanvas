@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-# 1. 추적할 색상 범위 (HSV 트랙바로 직접 캘리브레이션한 값)
-lower_color = np.array([9, 75, 134])
-upper_color = np.array([21, 134, 255])
+# 1. 추적할 색상 범위 (HSV 트랙바로 직접 캘리브레이션한 값) -> 노션 예시 코드 값으로 변경 더 잘되서
+lower_color = np.array([0, 100, 100])
+upper_color = np.array([10, 255, 255])
 
 # 2. 상단 팔레트 구성: (라벨, 색상) - 첫 칸은 지우개
 palette = [
